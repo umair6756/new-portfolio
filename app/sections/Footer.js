@@ -26,10 +26,10 @@ const Footer = () => {
             className="flex space-x-6"
           >
             {[
-              { icon: <FiGithub />, url: "https://github.com" },
-              { icon: <FiLinkedin />, url: "https://linkedin.com" },
+              { icon: <FiGithub />, url: "https://github.com/umair6756" },
+              { icon: <FiLinkedin />, url: "https://www.linkedin.com/in/muhammad-umair-00a71a320/" },
               { icon: <FiTwitter />, url: "https://twitter.com" },
-              { icon: <FiMail />, url: "mailto:alex@devopsengineer.com" }
+              { icon: <FiMail />, url: "chumair6756@gmail.com" }
             ].map((item, index) => (
               <motion.a 
                 key={index}
@@ -53,7 +53,7 @@ const Footer = () => {
           className="border-t border-[var(--border)] mt-8 pt-8 text-center"
         >
           <p className="text-[var(--text-secondary)]">
-            &copy; {new Date().getFullYear()} DevOps Portfolio. All rights reserved.
+            &copy; {new Date().getFullYear()} Hafiz Umair. All rights reserved.
           </p>
         </motion.div>
       </div>
