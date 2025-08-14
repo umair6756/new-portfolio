@@ -18,7 +18,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import SectionTitle from '../common/SectionTitle';
 import AnimatedCard from '../common/AnimatedCard';
-import { FaCloud, FaCode, FaServer, FaTools, FaEnvelope, FaMapMarkerAlt, FaUser, FaBriefcase } from 'react-icons/fa';
+import { FaCloud, FaCode, FaServer, FaTools, FaEnvelope, FaArrowRight, FaMapMarkerAlt, FaUser, FaBriefcase } from 'react-icons/fa';
 import Image from 'next/image';
 
 const About = () => {
@@ -197,7 +197,7 @@ const About = () => {
                       <AnimatedCard className="p-6" delay={0.1}>
                         <h3 className="text-2xl font-bold text-[var(--text-primary)] mb-4">Who am I?</h3>
                         <p className="text-[var(--text-secondary)] mb-4">
-                          I'm a DevOps Engineer based in Pakistan, specializing in cloud infrastructure, automation, and CI/CD pipelines. 
+                          I&apos;m a DevOps Engineer based in Pakistan, specializing in cloud infrastructure, automation, and CI/CD pipelines. 
                           I help organizations build scalable and reliable systems using modern DevOps practices.
                         </p>
                         <p className="text-[var(--text-secondary)]">
@@ -274,10 +274,12 @@ const About = () => {
               className="relative"
             >
               <AnimatedCard className="overflow-hidden rounded-xl border border-[var(--border)]">
-                <img 
-                  src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                <Image 
+                  src="/profile.jpg" 
                   alt="About" 
-                  className="w-full h-full object-cover"
+                  className="w-full h-[30rem] object-cover"
+                  width={400}
+                  height={200}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] to-transparent opacity-70" />
               </AnimatedCard>
@@ -304,7 +306,7 @@ const About = () => {
               <AnimatedCard className="p-6" delay={0.1}>
                 <h3 className="text-xl font-bold text-[var(--text-primary)] mb-3">Who am I?</h3>
                 <p className="text-[var(--text-secondary)]">
-                  I'm a DevOps Engineer based in Pakistan, specializing in cloud infrastructure, automation, and CI/CD pipelines. 
+                  I&apos;m a DevOps Engineer based in Pakistan, specializing in cloud infrastructure, automation, and CI/CD pipelines. 
                   I help organizations build scalable and reliable systems using modern DevOps practices.
                 </p>
               </AnimatedCard>

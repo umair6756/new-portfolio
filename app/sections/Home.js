@@ -70,7 +70,7 @@ const Home = () => {
       ))}
       
       <div className="container mx-auto px-6 z-10">
-        <div className="flex flex-col md:flex-row items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between sm:mt-20">
           <motion.div 
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
