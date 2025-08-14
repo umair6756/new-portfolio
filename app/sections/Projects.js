@@ -28,6 +28,7 @@ import { FiGithub, FiExternalLink, FiX, FiChevronRight } from 'react-icons/fi';
 import SectionTitle from '../common/SectionTitle';
 
 import { projects } from '../data/projects';
+import Image from 'next/image';
 
 
 const FloatingParticles = ({ count = 30 }) => {
@@ -122,10 +123,12 @@ const ProjectCard = ({ project, onClick }) => {
         }}
         transition={{ duration: 0.5 }}
       >
-        <img
+        <Image
           src={project.image}
           alt={project.title}
           className="absolute inset-0 w-full h-full object-cover opacity-50"
+          height={500}
+          width={500}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-transparent to-transparent opacity-80" />
       </motion.div>
@@ -222,13 +225,12 @@ const ProjectDetailsModal = ({ project, onClose }) => {
         <div className="grid lg:grid-cols-2 gap-0">
           {/* Image section with parallax effect */}
           <div className="relative h-96 lg:h-full">
-            <motion.img
+            <Image
               src={project.image}
               alt={project.title}
               className="absolute inset-0 w-full h-full object-cover"
-              initial={{ scale: 1.1 }}
-              animate={{ scale: 1 }}
-              transition={{ duration: 0.8 }}
+              height={500}
+              width={500}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[var(--background)] via-transparent to-transparent" />
             
